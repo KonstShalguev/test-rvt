@@ -1,7 +1,14 @@
 # **Тестовое задание РВТ**
 
-Версия 0.0.1
+Версия 1.0.0
 
+##
+Cтек проекта: HTML, CSS, Git, БЭМ
+##
 
-## Ссылка на github pages:
-https://konstshalguev.github.io/test-rvt/
+Чтобы скопировать проект себе на компьютер, выполните команду
+```
+git clone https://github.com/KonstShalguev/test-rvt.git
+```
+Чтобы запустить проект локально, нужно открыть в браузере файл index.html
+
