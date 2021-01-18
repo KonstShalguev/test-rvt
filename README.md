@@ -1,4 +1,4 @@
-# **Тестовое задание РВТ**
+# [Тестовое задание РВТ](https://konstshalguev.github.io/test-rvt/)
 
 Версия 1.0.0
 
@@ -10,5 +10,4 @@ Cтек проекта: HTML, CSS, Git, БЭМ
 ```
 git clone https://github.com/KonstShalguev/test-rvt.git
 ```
-Чтобы запустить проект локально, нужно открыть в браузере файл index.html
 
