@@ -2,13 +2,14 @@
 @import url(../vendor/fonts.css);
 .page {
 	max-width: 1920px;
+	margin: 0 auto;
 }
 
 .market {
-	width: 100%;
-	min-height: 820px;
-	box-sizing: border-box;
 	background-color: #fff;
+	width: 100%;
+	padding-bottom: 120px;
+	box-sizing: border-box;
 	position: relative;
 	z-index: 1;
 }
@@ -55,6 +56,7 @@
 	max-width: 100%;
 	display: block;
 	margin-left: 95px;
+	transform: translateY(-10px);
 }
 
 .market__subtitle {
@@ -82,7 +84,93 @@
 	font-weight: 600;
 }
 
+.repairs {
+	background-image: url(../images/bg-repairs.jpg);
+	background-size: cover;
+	box-sizing: border-box;
+	padding-bottom: 145px;
+	padding-top: 145px;
+	max-height: 778px;
+	width: 100%;
+}
+
+.repairs__content-wrapper {
+	width: 59%;
+	margin: 0 auto;
+}
+
+.repairs__title {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 59px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	max-width: 653px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.repairs__span-accent {
+	color: #F2C94C;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card {
+	width: auto;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.card__link {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 70px;
+	color: #F2C94C;
+	text-decoration: none;
+	position: absolute;
+	right: 16px;
+	top: 5px;
+}
+
+.card__link:hover {
+	color: #c5a239;
+}
+
+.card__img {
+	max-width: 100%;
+}
+
+.card__title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	max-width: 252px;
+}
+
+/* 768px 1024px */
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+	.market {
+		padding-bottom: 80px;
+	}
+	.market__two-columns {
+		width: 83%;
+		margin-top: 80px;
+	}
 	.market__img {
 		margin-left: 0;
 		max-width: 70%;
@@ -105,5 +193,67 @@
 	}
 	.market__two-columns {
 		display: block;
+	}
+	.repairs {
+		padding-bottom: 80px;
+		padding-top: 80px;
+	}
+	.repairs__content-wrapper {
+		width: 83%;
+	}
+}
+
+/* 320px 767px */
+
+@media screen and (max-width: 767px) {
+	.market {
+		padding-bottom: 20px;
+		overflow: hidden;
+	}
+	.market__title {
+		font-size: 24px;
+		line-height: 29px;
+		max-width: 290px;
+		margin: 0;
+	}
+	.market__img {
+		margin-left: 0;
+	}
+	.market__two-columns {
+		width: 88%;
+		grid-template-columns: 1fr;
+		margin: 55px auto 0 auto;
+	}
+	.market__subtitle {
+		margin: -85px 0 27px;
+	}
+	.market__paragraph {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 20px;
+	}
+	.market__background-text {
+		font-size: 64px;
+		line-height: 78px;
+		top: 140px;
+		left: -27px;
+	}
+	.repairs {
+		padding-top: 30px;
+		padding-left: 16px;
+		padding-bottom: 63px;
+	}
+	.repairs__content-wrapper {
+		width: 100%;
+	}
+	.repairs__title {
+		font-size: 24px;
+		line-height: 29px;
+		max-width: 288px;
+		margin-bottom: 35px;
+	}
+	.card__link {
+		left: 16px;
+		top: 5px;
 	}
 }
