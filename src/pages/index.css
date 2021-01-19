@@ -8,6 +8,7 @@
 .market {
 	background-color: #fff;
 	width: 100%;
+	overflow-x: hidden;
 	padding-bottom: 120px;
 	box-sizing: border-box;
 	position: relative;
@@ -19,6 +20,7 @@
 	grid-template-columns: 1fr 1fr;
 	width: 80%;
 	margin: 150px auto 0 auto;
+	position: relative;
 }
 
 .market__background-text {
@@ -159,6 +161,32 @@
 	text-transform: uppercase;
 	color: #FFFFFF;
 	max-width: 252px;
+}
+
+/* 1024px 1440px */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+	.market__two-columns {
+		grid-template-columns: 45% 55%;
+		width: 100%;
+		margin: 150px auto 0 auto;
+	}
+	.market__title {
+		margin: 10px 0 0 100px;
+		font-size: 30px;
+	}
+	.market__paragraph {
+		font-size: 24px;
+	}
+	.repairs__content-wrapper {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1900px) {
+	.repairs__content-wrapper {
+		width: 80%;
+	}
 }
 
 /* 768px 1024px */
